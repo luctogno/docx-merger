@@ -41,6 +41,7 @@
     "url": "https://github.com/apurvaojas/docx-merger/issues"
   },
   "homepage": "https://github.com/apurvaojas/docx-merger#readme",
+  "main": "dist/index.js",
   "config": {
     "ghooks": {
       "pre-commit": "npm run validate"
