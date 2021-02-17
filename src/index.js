@@ -8,6 +8,8 @@ var { mergeContentTypes, generateContentTypes } = require('./merge-relations-and
 var { prepareNumberings, generateNumbering } = require('./merge-bullets-numberings');
 const { prepareBodies, generateBody } = require('./merge-body');
 
+String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
+
 function DocxMerger(options, filesIn) {
   let addNumbering = false;
   let numberingAdded = false;
